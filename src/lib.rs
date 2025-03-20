@@ -15,6 +15,7 @@ pub use stack::NetStack;
 pub use tcp_listener::TcpListener;
 pub use tcp_stream::TcpStream;
 pub use udp::UdpSocket;
+pub use udp::{SendHalf,RecvHalf};
 
 #[derive(thiserror::Error, Debug)]
 pub enum Error {
